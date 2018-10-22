@@ -60,7 +60,7 @@ room_cafeteria = {
     """You walk in the cafeteria and immediately notice the lingering waft of coffee in the air. 
     You look at the black board by the cashier and notice that they're serving hotdogs and tiramisu. """,
 
-    "exits": {"west": "The Lab", "north": "Home", "east": "The Bar", "south": "The Reception"},
+    "exits": {"west": "The Lab", "north": "Home", "east": "The Closet", "south": "The Reception"},
 
     "items": [item_food, item_water, item_bluebear]
 }
@@ -71,7 +71,7 @@ room_shoppingcentre = {
     "description":
     """INSERT DESCRIPTION""",
 
-    "exits": {"west": "The Reception", "north": "The Bar"},
+    "exits": {"west": "The Reception", "north": "The Closet"},
 
     "items": [item_laptop, item_hideokojima]
 }
@@ -82,16 +82,17 @@ room_home = {
     "description":
     """INSERT DESCRIPTION""",
 
-    "exits": {"east": "The Bar", "south": "The Cafeteria"},
+    "exits": {"east": "The Closet", "south": "The Cafeteria"},
 
     "items": [item_phone]
 }
 
 room_bar = {
-    "name": "The Bar",
+    "name": "The Closet",
 
     "description":
-    """INSERT DESCRIPTION""",
+    """You walk into The Closet to the sounds of loud music and people shouting. 
+    There is a constant flashing of disco lights and on the board you see that all drinks are £1.13""",
 
     "exits": {"west": "The Cafeteria", "north": "Home", "south": "The Shopping Centre"},
 
@@ -109,6 +110,21 @@ room_petshop = {
     "items": [item_food, item_water, item_bluebear, item_pythonguy]
 }
 
+room_cofffeeshop = {
+    "name": "The Coffee Shop",
+
+    "description":
+    """You walk into the coffee shop and the strong aroma of coffee beans lingers around the room. 
+    You can hear the constant grinding of beans and in the corner of your eye you notice a man with a grey beard wearing glasses.
+    """,
+
+    "exits": {"east": "The Shopping Centre", "west": "The Cinema", "north": "The Cafeteria"},
+
+    "items": [item_keycard]
+}
+
+
+
 rooms = {
     "The Reception": room_reception,
     "The Lab": room_lab,
@@ -117,7 +133,7 @@ rooms = {
     "The Cafeteria": room_cafeteria,
 
     "The Shopping Centre": room_shoppingcentre,
-    "The Bar": room_bar,
+    "The Closet": room_bar,
     "Home": room_home,
     "The Petshop": room_petshop,
 

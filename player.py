@@ -1,5 +1,5 @@
-from items import *
-from map import rooms
+from item_project import *
+from mapproject import rooms
 
 inventory = []
 #For example: item_id

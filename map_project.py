@@ -1,4 +1,4 @@
-from items import *
+from item_project import *
 
 room_reception = {
     "name": "The Reception",

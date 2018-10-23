@@ -7,6 +7,16 @@ inventory = []
 # Start game at the reception
 current_room = rooms["Reception"]
 
-energy_bar = 100
+#====================================
+# Player status
+energy_min = 0
+#Minimum energyof player
+
+energy_max = 100
+#Maximum energy of player
 
 project_process = 0
+#Original project process
+
+project_process_max = 100
+#Maximum project process
